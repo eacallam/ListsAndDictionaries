@@ -1,1 +1,6 @@
 c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\bin\Debug\ListsAndDictionaries.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\bin\Debug\ListsAndDictionaries.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\bin\Debug\ListsAndDictionaries.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\obj\Debug\ListsAndDictionaries.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\obj\Debug\ListsAndDictionaries.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\ListsAndDictionaries\ListsAndDictionaries\obj\Debug\ListsAndDictionaries.pdb
