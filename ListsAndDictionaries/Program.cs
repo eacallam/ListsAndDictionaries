@@ -159,9 +159,107 @@ namespace ListsAndDictionaries
 
 
             //DICTIONARIES
+            Dictionary<int, string> coatCheck = new Dictionary<int, string>()
+            {
+                { 23, "yellow jacket" },
+                { 14, "blue coat" },
+                { 3, "white trench" } ,
+                { 5, "black blazer" },
+                { 9, "blue coat" },
+                { 16, "sweatshirt" },
+            };
+            
+            foreach (KeyValuePair<int, string> item in coatCheck)
+                Console.WriteLine(item); ;
+
+            //DICTIONARY METHODS
+            //Add
+            //ContainsKey
+            //ContainsValue
+            //TryGetValue
+            //Remove
+            //Clear
+            //Key
+            //Value
+            //Count
+        
+
+            //Count
+            Console.WriteLine(coatCheck.Count());
+
+            //Print only keys
+            foreach (KeyValuePair<int, string> coat in coatCheck)
+            {
+                Console.WriteLine(coat.Key);
+            }
+
+            //Print the values
+            foreach (KeyValuePair<int, string> coat in coatCheck)
+            {
+                Console.WriteLine(coat.Value);
+            }
+
+            //PRACTICE
+            //Create a dictionary for a car valet service with 10 cars. 
+            //The key will be the customer’s last name and the value will be the car make.
+            //Print all the elements to the console.
+
+            Dictionary<string, string> carValet = new Dictionary<string, string>()
+            {
+                { "Callam", "Chevrolet"},
+                { "Smith", "Ford"},
+                { "Bob", "Cadillac"},
+                { "Johnson", "Honda" },
+                { "McDowell", "Ford" },
+                { "Brown", "Chevrolet" },
+                { "McCormick", "Mitsubishi" },
+                { "Char", "Honda" },
+                { "Midei", "Ford" },
+                { "Moeien", "Toyota" },
+            };
+
+            foreach (KeyValuePair<string,string> car in carValet)
+            {
+                Console.WriteLine(car);
+            }
 
 
+            //Create a dictionary of 10 zoo animals. The key will be the animal type and the value will be the number of animals at the zoo.
+            //Remove the zoo animal with the lowest quantity from the dictionary using the Remove method.
+            //Use the Count Property to count the number of remaining entries in the dictionary. Print to the console.
+            Dictionary<string, int> zooInventory = new Dictionary<string, int>()
+            {
+                { "Elephant", 20 },
+                { "Quokka", 12 },
+                { "Hippo", 5 },
+                { "Giraffe", 2 },
+                { "Kangaroo", 1 },
+                { "Panda", 8 },
+                { "Koala", 10 },
+                { "Mouse", 7 },
+                { "Snake", 30 },
+                { "Tarantula", 4 }
+            };
 
+            zooInventory.Remove("Kangaroo");
+
+            Console.WriteLine(zooInventory.Count());
+
+            //Create a program that allows a user to input an animal name to check to see if the dictionary contains that animal name.
+            //If the animal name does not exist in the dictionary, ask the user if s/he would like to add it. If so, add the animal to the dictionary.
+
+            Console.WriteLine("Please enter an animal and I'll tell you if it's in the dictionary.");
+            string userAnimal = Console.ReadLine();
+            if (zooInventory.ContainsKey(userAnimal) == false)
+            {
+                Console.WriteLine("Would you like to add this animal to the dictionary? Type 'yes' if so.");
+                string userAddAnswer = Console.ReadLine();
+                if (userAddAnswer.ToLower() == "yes")
+                    zooInventory.Add(userAnimal, 0);
+            }
+
+            Console.WriteLine(zooInventory.Count());
+            
         }
     }
 }
